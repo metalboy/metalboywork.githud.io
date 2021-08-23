@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: block !important;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
+  overflow: hidden;
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  bottom: 0;
+}
+
+svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.waves :nth-child(1) {
+  background: white repeat-x;
+  mask-image: url(wave.svg);
+  mask-size: 50% 100%;
+  mask-repeat: repeat;
+  position: absolute;
+  min-width: 200%;
+  height: 20vh;
+  opacity: 0.7;
+  bottom: 16vh;
+  animation-delay: -2;
+  animation: wave 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.waves :nth-child(2) {
+  background: white repeat-x;
+  mask-image: url(wave.svg);
+  mask-size: 50% 100%;
+  mask-repeat: repeat;
+  position: absolute;
+  min-width: 200%;
+  height: 20vh;
+  opacity: 0.5;
+  bottom: 14vh;
+  animation-delay: -3;
+  animation: wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  transform: translate3d(0, 3, 0);
+}
+
+.waves :nth-child(3) {
+  background: white repeat-x;
+  mask-image: url(wave.svg);
+  mask-size: 50% 100%;
+  mask-repeat: repeat;
+  position: absolute;
+  min-width: 200%;
+  height: 20vh;
+  opacity: 0.3;
+  bottom: 11vh;
+  animation-delay: -4;
+  animation: wave 16s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  transform: translate3d(0, 5, 0);
+}
+
+.waves :nth-child(4) {
+  background: white repeat-x;
+  mask-image: url(wave.svg);
+  mask-size: 50% 100%;
+  mask-repeat: repeat;
+  position: absolute;
+  min-width: 200%;
+  height: 20vh;
+  opacity: 1;
+  bottom: 9vh;
+  animation-delay: -5;
+  animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  transform: translate3d(0, 7, 0);
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
