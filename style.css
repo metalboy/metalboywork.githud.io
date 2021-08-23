@@ -1,13 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -36,62 +43,96 @@ svg {
 
 .waves :nth-child(1) {
   background: white repeat-x;
-  mask-image: url(wave.svg);
-  mask-size: 50% 100%;
-  mask-repeat: repeat;
+  -webkit-mask-image: url(wave.svg);
+          mask-image: url(wave.svg);
+  -webkit-mask-size: 50% 100%;
+          mask-size: 50% 100%;
+  -webkit-mask-repeat: repeat;
+          mask-repeat: repeat;
   position: absolute;
   min-width: 200%;
   height: 20vh;
   opacity: 0.7;
   bottom: 16vh;
-  animation-delay: -2;
-  animation: wave 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  transform: translate3d(0, 0, 0);
+  -webkit-animation-delay: -2;
+          animation-delay: -2;
+  -webkit-animation: wave 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: wave 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .waves :nth-child(2) {
   background: white repeat-x;
-  mask-image: url(wave.svg);
-  mask-size: 50% 100%;
-  mask-repeat: repeat;
+  -webkit-mask-image: url(wave.svg);
+          mask-image: url(wave.svg);
+  -webkit-mask-size: 50% 100%;
+          mask-size: 50% 100%;
+  -webkit-mask-repeat: repeat;
+          mask-repeat: repeat;
   position: absolute;
   min-width: 200%;
   height: 20vh;
   opacity: 0.5;
   bottom: 14vh;
-  animation-delay: -3;
-  animation: wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  transform: translate3d(0, 3, 0);
+  -webkit-animation-delay: -3;
+          animation-delay: -3;
+  -webkit-animation: wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: wave 13s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-transform: translate3d(0, 3, 0);
+          transform: translate3d(0, 3, 0);
 }
 
 .waves :nth-child(3) {
   background: white repeat-x;
-  mask-image: url(wave.svg);
-  mask-size: 50% 100%;
-  mask-repeat: repeat;
+  -webkit-mask-image: url(wave.svg);
+          mask-image: url(wave.svg);
+  -webkit-mask-size: 50% 100%;
+          mask-size: 50% 100%;
+  -webkit-mask-repeat: repeat;
+          mask-repeat: repeat;
   position: absolute;
   min-width: 200%;
   height: 20vh;
   opacity: 0.3;
   bottom: 11vh;
-  animation-delay: -4;
-  animation: wave 16s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  transform: translate3d(0, 5, 0);
+  -webkit-animation-delay: -4;
+          animation-delay: -4;
+  -webkit-animation: wave 16s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: wave 16s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-transform: translate3d(0, 5, 0);
+          transform: translate3d(0, 5, 0);
 }
 
 .waves :nth-child(4) {
   background: white repeat-x;
-  mask-image: url(wave.svg);
-  mask-size: 50% 100%;
-  mask-repeat: repeat;
+  -webkit-mask-image: url(wave.svg);
+          mask-image: url(wave.svg);
+  -webkit-mask-size: 50% 100%;
+          mask-size: 50% 100%;
+  -webkit-mask-repeat: repeat;
+          mask-repeat: repeat;
   position: absolute;
   min-width: 200%;
   height: 20vh;
   opacity: 1;
   bottom: 9vh;
-  animation-delay: -5;
-  animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  transform: translate3d(0, 7, 0);
+  -webkit-animation-delay: -5;
+          animation-delay: -5;
+  -webkit-animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-transform: translate3d(0, 7, 0);
+          transform: translate3d(0, 7, 0);
+}
+
+@-webkit-keyframes wave {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100%;
+  }
 }
 
 @keyframes wave {
